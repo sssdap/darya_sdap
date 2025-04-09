@@ -1,0 +1,133 @@
+/* Hero Section */
+.contact-hero {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.contact-hero h1 {
+    font-family: 'montserrat';
+    font-size: 3rem;
+    font-family: 'Widock', sans-serif;
+    margin-bottom: 20px;
+}
+
+.contact-hero p {
+    font-family: 'montserrat';
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Contact Section */
+.contact-section {
+    font-family: 'montserrat';
+    background-color: #000;
+    padding: 83px 40px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.form-group input, .form-group textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+}
+
+.form-group textarea {
+    resize: vertical;
+    
+}
+
+.submit-button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Адаптация для планшетов и телефонов */
+@media (max-width: 768px) {
+    .contact-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-hero p {
+        font-size: 1rem;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 0.9rem;
+    }
+
+    .submit-button {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 417px) {
+    .contact-section{
+        padding: 30px 40px;
+    }
+
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+
+    .contact-hero p {
+        font-size: 0.9rem;
+    }
+
+    .form-group label {
+        font-size: 0.95rem;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 0.85rem;
+    }
+
+    .submit-button {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+}

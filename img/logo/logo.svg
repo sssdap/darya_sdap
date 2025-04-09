@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 63.87">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.05em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.12em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-4 {
+        fill: #fff;
+        font-family: WidockTRIAL-Bold, 'Widock TRIAL';
+        font-size: 60px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="_Слой_1-2" data-name="Слой 1">
+    <text class="cls-4" transform="translate(0 50.97)"><tspan class="cls-3" x="0" y="0">D</tspan><tspan x="55.44" y="0">A</tspan><tspan class="cls-1" x="108" y="0">R</tspan><tspan class="cls-2" x="161.94" y="0">Y</tspan><tspan x="206.88" y="0">A S</tspan><tspan class="cls-3" x="342.42" y="0">D</tspan><tspan x="397.86" y="0">AP</tspan></text>
+  </g>
+</svg>

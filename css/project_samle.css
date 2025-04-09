@@ -1,0 +1,276 @@
+/* Общие стили */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000; /* Черный фон для всего сайта */
+    color: #fff;
+}
+
+/* Главное фото на весь экран */
+.fullscreen-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullscreen-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.fullscreen-text {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.fullscreen-title {
+    font-family: 'Widock', sans-serif;
+    font-size: 8rem;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    margin: 0;
+}
+
+
+/* Секция About */
+.about-section {
+    background-color: #000; /* Черный фон */
+    padding: 60px 20px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 300px;
+}
+
+.about, .details {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about h2, .details h2 {
+    font-family: 'widock';
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.about h2::after, .details h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+
+.about_text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    opacity: 0.9;
+}
+
+.details p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.detail-value {
+    margin-left: 10px;
+    font-weight: 600;
+    color: #ccc;
+}
+
+/* Адаптация для планшетов и телефонов */
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about h2, .details h2 {
+        font-size: 2rem;
+    }
+
+    .about_text, .details p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        padding: 40px 15px;
+    }
+
+    .about h2, .details h2 {
+        font-size: 1.8rem;
+    }
+
+    .about_text, .details p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Альбом с фотографиями */
+.album-section {
+    background-color: #000; /* Черный фон для альбома */
+    padding: 40px 20px;
+}
+
+.album-container {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-rows: 500px 700px 500px 700px;
+    gap: 20px;
+}
+
+.album-item {
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.album-item:hover {
+    transform: scale(1.05);
+}
+
+.album-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.next-button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Стили для кнопки Next */
+.next-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Эффекты при наведении */
+.next-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Адаптация для планшетов и телефонов */
+@media (max-width: 768px) {
+    .next-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .next-button {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+    }
+}
+
+/* Модальное окно */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: auto;
+}
+
+.modal-content {
+    display: block;
+    margin: 5% auto;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #ccc;
+}
+
+/* Адаптация для планшетов и телефонов */
+@media (max-width: 768px) {
+    .fullscreen-title {
+        font-size: 5rem;
+    }
+
+    .album-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .album-item {
+        border-radius: 0; /* Убираем скругление углов */
+    }
+
+    .album-img {
+        border-radius: 0; 
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .fullscreen-title {
+        font-size: 3rem;
+    }
+
+    .album-grid {
+        grid-template-columns: 1fr;
+    }
+}
+

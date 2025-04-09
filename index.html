@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Home</title>
+</head>
+<body>
+<!-- Фиксированный header -->
+<header class="ms-fixed-header">
+  <nav class="ms-navbar">
+      <div class="ms-head-container">
+          <div class="ms-navbar-wrap">
+              <img src="/img/logo/logo.svg" alt="" class="ms-logo" id="ms-logo">
+              <div class="ms-hamb" id="ms-hamb">
+                  <div class="ms-hamb-field" id="ms-hamb-field">
+                      <span class="ms-bar"></span>
+                      <span class="ms-bar"></span>
+                      <span class="ms-bar"></span>
+
+                  </div>
+              </div>
+              <ul class="ms-menu" id="ms-menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./html/price.html">Price</a></li>
+                <li><a href="./html/about.html">About</a></li>
+                <li><a href="./html/contact.html">Contact</a></li>
+                <li class="ms-project-item">
+                    <a href="#" class="ms-project-link">Project</a>
+                    <ul class="ms-submenu">
+                        <li><a href="./html/project_sample/b&w.html">Dancing in Black and White</a></li>
+                        <li><a href="./html/project_sample/s&f.html">Style and Fashion</a></li>
+                        <li><a href="./html/project_sample/week_fashion.html">Week Fashion</a></li>
+                        <li><a href="./html/project_sample/rock.html">ROCK'N'ROLL</a></li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+      </div>
+  </nav>
+  <div class="ms-popup" id="ms-popup"></div>
+</header>
+    <main>
+        <!-- Слайдер -->
+        <div class="slider-main">
+            <ul class="slider-wrapper">
+              <li class="slider-item active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./img/b&w/image_rTyFCF.png')">
+                <div class="slider-content">
+                  <h2 class="slider-title">Dancing in Black and White</h2>
+                  <p class="slider-description">New York. October 2021</p>
+                  <a href="./html/project_sample/b&w.html" class="slider-button">View more</a> <!-- Кнопка-ссылка -->
+                </div>
+              </li>
+              <li class="slider-item" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./img/s&f/14540-1701-8545-463-fullsize\ копия.jpg')">
+                <div class="slider-content">
+                  <h2 class="slider-title">Style and Fashion</h2>
+                  <p class="slider-description">New York. October 2021</p>
+                  <a href="./html/project_sample/s&f.html" class="slider-button">View more</a>
+                </div>
+              </li>
+              <li class="slider-item" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./img/week_fashion/da885143877d4f1ecfc146c0bc001d27.jpg')">
+                <div class="slider-content">
+                  <h2 class="slider-title">WEek Fashion</h2>
+                  <p class="slider-description">New York. October 2021</p>
+                  <a href="./html/project_sample/week_fashion.html" class="slider-button">View more</a>
+                </div>
+              </li>
+              <li class="slider-item" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./img/rock/diego-sulivan-182118.jpg')">
+                <div class="slider-content">
+                  <h2 class="slider-title">ROCK'N'ROLL</h2>
+                  <p class="slider-description">New York. October 2021</p>
+                  <a href="./html/project_sample/rock.html" class="slider-button">View more</a>
+                </div>
+              </li>v
+            </ul>
+          
+            <div class="slider-pagination"></div>
+            <button class="slider-nav-btn prev" aria-label="Previous slide">←</button>
+            <button class="slider-nav-btn next" aria-label="Next slide">→</button>
+          </div>
+
+          <footer class="ms-footer">
+            <div class="ms-footer-container">
+              <!-- Левый блок с номером телефона и именем -->
+              <div class="ms-footer-left">
+                <p class="ms-footer-phone">+79227886558</p>
+                <p class="ms-footer-name">DARYA SDAP</p>
+              </div>
+          
+              <!-- Правый блок с иконками социальных сетей -->
+              <div class="ms-footer-right">
+                <a href="#" class="ms-social-link" aria-label="Telegram">
+                  <img src="./img/icons/Platform=Telegram, Color=Negative.png" alt="Telegram" class="ms-social-icon">
+                </a>
+                <a href="#" class="ms-social-link" aria-label="VK">
+                  <img src="./img/icons/Platform=VK, Color=Negative.png" alt="VK" class="ms-social-icon">
+                </a>
+                <a href="#" class="ms-social-link" aria-label="YouTube">
+                  <img src="./img/icons/Platform=Pinterest, Color=Negative.png" alt="YouTube" class="ms-social-icon">
+                </a>
+              </div>
+            </div>
+          </footer>
+    <!-- Подключение скриптов -->
+  <script src="./js/script.js" defer></script>
+  <script src="./js/modal_window.js" defer></script>
+  <script src="./js/slider.js" defer></script>
+    </main>
+  </body>
+</html>
